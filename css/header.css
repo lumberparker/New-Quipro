@@ -1,0 +1,141 @@
+.header {
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(16px);
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 5, 8, 0.96),
+    rgba(5, 5, 8, 0.72),
+    transparent
+  );
+}
+
+.header__inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.5rem;
+}
+
+.header__logo-image {
+  height: 32px;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  position: relative;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+  transition: color var(--transition-fast);
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-soft),
+    var(--color-primary)
+  );
+  transition: width var(--transition-normal);
+}
+
+.nav__link:hover {
+  color: var(--color-text);
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+.nav__link--primary {
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-primary-soft);
+  background: radial-gradient(
+    120% 180% at 0% 0%,
+    rgba(28, 151, 255, 0.4),
+    transparent 50%
+  );
+}
+
+.nav__link--primary::after {
+  display: none;
+}
+
+.nav__toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav__toggle-bar {
+  width: 20px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .nav__toggle {
+    display: flex;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 56px;
+    right: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem 0.9rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background: #050508;
+    box-shadow: var(--shadow-soft);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity var(--transition-normal),
+      transform var(--transition-normal), visibility var(--transition-normal);
+  }
+
+  .nav__list--open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav__link--primary {
+    width: 100%;
+    text-align: center;
+  }
+}

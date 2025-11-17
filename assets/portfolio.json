@@ -1,0 +1,132 @@
+[
+  {
+    "category": "Sitios Web",
+    "subcategories": [
+      {
+        "name": "Corporativos",
+        "projects": [
+          {
+            "name": "Resirene",
+            "image": "assets/imagenes/portfolio/resirene.jpg",
+            "description": "Sitio corporativo para la industria química con enfoque en productos y sostenibilidad."
+          },
+          {
+            "name": "Caribou Visual Studio",
+            "image": "assets/imagenes/portfolio/caribou.jpg",
+            "description": "Portafolio visual para estudio creativo, optimizado para mostrar proyectos multimedia."
+          },
+          {
+            "name": "Flat",
+            "image": "assets/imagenes/portfolio/flatmx.jpg",
+            "description": "Landing page para plataforma digital enfocada en experiencias inmobiliarias."
+          }
+        ]
+      },
+      {
+        "name": "Startups y comunidades",
+        "projects": [
+          {
+            "name": "Co-Madre*",
+            "image": "assets/imagenes/portfolio/comadre.jpg",
+            "description": "Comunidad de coworking para emprendedoras con foco en reservas y eventos."
+          },
+          {
+            "name": "The Marketplace*",
+            "image": "assets/imagenes/portfolio/marketplace.jpg",
+            "description": "Marketplace digital para conectar oferta y demanda de productos especializados."
+          },
+          {
+            "name": "BMW Car Club Mexico",
+            "image": "assets/imagenes/portfolio/bmw.jpg",
+            "description": "Plataforma para club automotriz con calendario de eventos y galerías."
+          },
+          {
+            "name": "Magicae Jewelry",
+            "image": "assets/imagenes/portfolio/magicae.jpg",
+            "description": "E-commerce de joyería con catálogo dinámico y administración de colecciones."
+          },
+          {
+            "name": "Secnesys*",
+            "image": "assets/imagenes/portfolio/secnesys.jpg",
+            "description": "Sitio corporativo orientado a ciberseguridad y servicios tecnológicos."
+          },
+          {
+            "name": "Cacao Paycard Solutions",
+            "image": "assets/imagenes/portfolio/cacao.jpg",
+            "description": "Plataforma fintech para soluciones de pago y tarjetas digitales."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Plataformas de Lealtad / Web",
+    "subcategories": [
+      {
+        "name": "Lealtad",
+        "projects": [
+          {
+            "name": "Plataforma de Lealtad",
+            "image": "assets/imagenes/portfolio/lealtad-1.jpg",
+            "description": "Sistema de lealtad B2C con acumulación de puntos y canje."
+          },
+          {
+            "name": "Plataforma de Lealtad",
+            "image": "assets/imagenes/portfolio/lealtad-2.jpg",
+            "description": "Programa de recompensas enfocado en campañas segmentadas."
+          }
+        ]
+      },
+      {
+        "name": "Plataformas Digitales",
+        "projects": [
+          {
+            "name": "Sistema de Gestión de Impresoras",
+            "image": "assets/imagenes/portfolio/impresoras.jpg",
+            "description": "Panel web para monitoreo y administración de flotas de impresión."
+          },
+          {
+            "name": "Plataforma Web",
+            "image": "assets/imagenes/portfolio/plataforma-web-1.jpg",
+            "description": "Portal corporativo con gestión de contenidos y secciones dinámicas."
+          },
+          {
+            "name": "Plataforma Web",
+            "image": "assets/imagenes/portfolio/plataforma-web-2.jpg",
+            "description": "Sitio institucional con integración a sistemas internos."
+          },
+          {
+            "name": "Plataforma Digital de Seguros",
+            "image": "assets/imagenes/portfolio/seguros.jpg",
+            "description": "Plataforma para cotización y contratación de seguros en línea."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Apps y Web Apps",
+    "subcategories": [
+      {
+        "name": "Apps móviles",
+        "projects": [
+          {
+            "name": "Apps móviles",
+            "image": "assets/imagenes/portfolio/apps-moviles.jpg",
+            "description": "Aplicaciones móviles nativas para iOS y Android conectadas a APIs seguras."
+          }
+        ]
+      },
+      {
+        "name": "Web Apps",
+        "projects": [
+          {
+            "name": "Web Apps",
+            "image": "assets/imagenes/portfolio/web-apps.jpg",
+            "description": "Web apps responsivas con dashboards y experiencia tipo aplicación."
+          }
+        ]
+      }
+    ]
+  }
+]

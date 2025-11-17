@@ -1,0 +1,143 @@
+@import url("./section-header.css");
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./services.css");
+@import url("./how.css");
+@import url("./portfolio.css");
+@import url("./partners.css");
+@import url("./contact.css");
+@import url("./footer.css");
+
+:root {
+  --color-bg: #050508;
+  --color-bg-alt: #0b0b10;
+  --color-bg-soft: #111119;
+  --color-primary: #1c97ff;
+  --color-primary-soft: #1c97ff;
+  --color-text: #f5f5f7;
+  --color-text-muted: #a0a0b3;
+  --color-border: #262637;
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.65);
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --transition-fast: 180ms ease-out;
+  --transition-normal: 240ms ease-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body.page {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Inter", sans-serif;
+  background: radial-gradient(circle at top left, #171727 0, #050508 55%);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+.main {
+  padding-top: 80px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  padding: 0.75rem 1.25rem;
+  background: #000;
+  color: #fff;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.section-heading {
+  max-width: 960px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1.5rem;
+}
+
+.section-heading--secondary {
+  margin-top: 3.5rem;
+}
+
+.section-heading__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-heading__subtitle {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.card {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(145deg, #12121c, #050508);
+  padding: 1rem 1.2rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition-normal),
+    box-shadow var(--transition-normal), border-color var(--transition-normal),
+    background var(--transition-normal);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    160% 190% at 0% 0%,
+    rgba(0, 162, 255, 0.2),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.card__title {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .section-heading__title {
+    font-size: 1.4rem;
+  }
+}
