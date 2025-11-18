@@ -90,11 +90,7 @@
             "image": "assets/imagenes/portfolio/contenidos.jpg",
             "description": "Portal corporativo con gestión de contenidos y secciones dinámicas."
           },
-          {
-            "name": "Plataforma Web",
-            "image": "assets/imagenes/portfolio/plataforma-web-2.jpg",
-            "description": "Sitio institucional con integración a sistemas internos."
-          },
+         
           {
             "name": "Plataforma Digital de Seguros",
             "image": "assets/imagenes/portfolio/seguros.jpg",
