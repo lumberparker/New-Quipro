@@ -72,7 +72,7 @@ body.page {
 }
 
 .section-heading--secondary {
-  margin-top: 3.5rem;
+  margin-top: 5rem;
 }
 
 .section-heading__title {
@@ -139,5 +139,9 @@ body.page {
 
   .section-heading__title {
     font-size: 1.4rem;
+  }
+
+  .section-heading--secondary {
+    margin-top: 3rem;
   }
 }
