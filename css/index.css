@@ -79,9 +79,10 @@ body.page {
 }
 
 .section-heading {
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto 2.5rem;
-  padding: 0 1.5rem;
+  padding: 0;
+  text-align: left;
 }
 
 .section-heading--secondary {
@@ -93,6 +94,8 @@ body.page {
   font-size: 1.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: left;
+  color: #1c97ff;
 }
 
 .section-heading__subtitle {
