@@ -22,17 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
   const success = document.getElementById("contact-success");
 
-  if (form && success) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      success.hidden = false;
-      form.reset();
-      setTimeout(() => {
-        success.hidden = true;
-      }, 4000);
-    });
-  }
-
   initPortfolio();
 });
 
