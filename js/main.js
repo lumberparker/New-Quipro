@@ -214,34 +214,69 @@ function initRequirementsAccordion() {
     const body = block.querySelector(".requirements__block-body");
     if (!header || !body) return;
 
+    // initial collapsed state
+    body.style.height = "0px";
+
     if (index === 0) {
       block.classList.add("requirements__block--open");
-      body.hidden = false;
       body.classList.add("requirements__block-body--open");
-    } else {
-      body.hidden = true;
+      body.style.height = body.scrollHeight + "px";
+      body.addEventListener(
+        "transitionend",
+        () => {
+          if (body.classList.contains("requirements__block-body--open")) {
+            body.style.height = "auto";
+          }
+        },
+        { once: true }
+      );
     }
 
     header.addEventListener("click", () => {
       const isOpen = block.classList.contains("requirements__block--open");
 
+      // close other blocks
       blocks.forEach((otherBlock) => {
         const otherBody = otherBlock.querySelector(".requirements__block-body");
-        if (!otherBody) return;
-        otherBlock.classList.remove("requirements__block--open");
-        otherBody.hidden = true;
-        otherBody.classList.remove("requirements__block-body--open");
+        if (!otherBody || otherBlock === block) return;
+
+        if (otherBlock.classList.contains("requirements__block--open")) {
+          otherBlock.classList.remove("requirements__block--open");
+          otherBody.classList.remove("requirements__block-body--open");
+          const currentHeight = otherBody.scrollHeight;
+          otherBody.style.height = currentHeight + "px";
+          requestAnimationFrame(() => {
+            otherBody.style.height = "0px";
+          });
+        }
       });
 
       if (!isOpen) {
         block.classList.add("requirements__block--open");
-        body.hidden = false;
-        // trigger animation
-        body.classList.remove("requirements__block-body--open");
-        // force reflow to restart animation if needed
-        // eslint-disable-next-line no-unused-expressions
-        void body.offsetWidth;
         body.classList.add("requirements__block-body--open");
+        body.style.height = "0px";
+        const targetHeight = body.scrollHeight;
+        requestAnimationFrame(() => {
+          body.style.height = targetHeight + "px";
+        });
+        body.addEventListener(
+          "transitionend",
+          () => {
+            if (body.classList.contains("requirements__block-body--open")) {
+              body.style.height = "auto";
+            }
+          },
+          { once: true }
+        );
+      } else {
+        // close current block
+        block.classList.remove("requirements__block--open");
+        body.classList.remove("requirements__block-body--open");
+        const currentHeight = body.scrollHeight;
+        body.style.height = currentHeight + "px";
+        requestAnimationFrame(() => {
+          body.style.height = "0px";
+        });
       }
     });
   });
