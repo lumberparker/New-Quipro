@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
   const success = document.getElementById("contact-success");
 
+  initRequirementsAccordion();
   initPortfolio();
 });
 
@@ -177,6 +178,44 @@ const defaultPortfolioData = [
 ];
 
 let portfolioData = defaultPortfolioData.slice();
+
+function initRequirementsAccordion() {
+  const blocksContainer = document.querySelector(".requirements__blocks");
+  if (!blocksContainer) return;
+
+  const blocks = Array.from(
+    blocksContainer.querySelectorAll(".requirements__block")
+  );
+
+  blocks.forEach((block, index) => {
+    const header = block.querySelector(".requirements__block-header");
+    const body = block.querySelector(".requirements__block-body");
+    if (!header || !body) return;
+
+    if (index === 0) {
+      block.classList.add("requirements__block--open");
+      body.hidden = false;
+    } else {
+      body.hidden = true;
+    }
+
+    header.addEventListener("click", () => {
+      const isOpen = block.classList.contains("requirements__block--open");
+
+      blocks.forEach((otherBlock) => {
+        const otherBody = otherBlock.querySelector(".requirements__block-body");
+        if (!otherBody) return;
+        otherBlock.classList.remove("requirements__block--open");
+        otherBody.hidden = true;
+      });
+
+      if (!isOpen) {
+        block.classList.add("requirements__block--open");
+        body.hidden = false;
+      }
+    });
+  });
+}
 
 function initPortfolio() {
   const container = document.querySelector(".portfolio__dynamic");
