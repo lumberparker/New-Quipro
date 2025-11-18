@@ -96,6 +96,8 @@ body.page {
   text-transform: uppercase;
   text-align: left;
   color: #1c97ff;
+  font-family: "Exo 2", system-ui, -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "Inter", sans-serif;
 }
 
 .section-heading__subtitle {

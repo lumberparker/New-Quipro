@@ -19,6 +19,8 @@
   font-size: 2.2rem;
   line-height: 1.3;
   margin: 0 0 1.5rem;
+  font-family: "Exo 2", system-ui, -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "Inter", sans-serif;
 }
 
 .hero__underline {
@@ -36,6 +38,8 @@
 .hero__subtitle {
   margin: 0 0 2.2rem;
   color: var(--color-primary);
+  font-family: "Exo 2", system-ui, -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "Inter", sans-serif;
 }
 
 .hero__actions {
@@ -118,4 +122,3 @@
     font-size: 1.7rem;
   }
 }
-
