@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Partner de Tecnología",
+    "image": "assets/imagenes/partner-tecnologia.jpg",
+    "description": "Aliado estratégico en infraestructura y servicios en la nube."
+  },
+  {
+    "name": "Agencia Creativa",
+    "image": "assets/imagenes/partner-creativo.jpg",
+    "description": "Especialistas en branding, UX/UI y contenido digital."
+  },
+  {
+    "name": "Consultora de Negocios",
+    "image": "assets/imagenes/partner-consultoria.jpg",
+    "description": "Consultores que ayudan a alinear la tecnología con objetivos de negocio."
+  }
+]

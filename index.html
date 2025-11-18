@@ -41,11 +41,9 @@
             <li class="nav__item">
               <a href="#portfolio" class="nav__link">Ejemplos</a>
             </li>
-            <!--
             <li class="nav__item">
               <a href="#partners" class="nav__link">Partners</a>
             </li>
-            -->
             <li class="nav__item">
               <a href="#contact" class="nav__link nav__link--primary"
                 >Propuesta</a
@@ -357,23 +355,14 @@
       </section>
 
       <!-- Partners -->
-     <!-- <section id="partners" class="partners">
+      <section id="partners" class="partners section-animate">
         <div class="section-heading">
           <h2 class="section-heading__title">Partners</h2>
+          <p class="section-heading__subtitle">
+            Aliados estratégicos que complementan nuestras soluciones.
+          </p>
         </div>
-        <div class="partners__content">
-          <img
-            src="assets/code-screen.jpg"
-            alt="Código de software"
-            class="partners__image"
-          />
-          <div class="partners__text">
-            <p>
-              Trabajamos de la mano con aliados estratégicos para ofrecerte
-              soluciones robustas y escalables.
-            </p>
-          </div>
-        </div>
+        <div class="partners__grid" aria-live="polite"></div>
       </section>
 
       <!-- Contact -->
@@ -382,7 +371,7 @@
           <div class="section-heading">
             <h2 class="section-heading__title">¿Listo para comenzar?</h2>
             <p class="section-heading__subtitle">
-              Llena el siguiente formulario o ponte en contacto con nosotros por
+              Ponte en contacto con nosotros por
               WhatsApp o teléfono y uno de nuestros expertos te comenzará a
               guiar para hacer realidad tu proyecto.
             </p>
@@ -410,6 +399,7 @@
                 <span class="contact__whatsapp-note">Mándanos un WhatsApp</span>
               </a>
             </div>
+            <!--
             <form
               class="contact__form"
               id="contact-form"
@@ -417,12 +407,10 @@
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              
             >
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
-                <label
-                  >
+                <label>
                   <input name="bot-field" />
                 </label>
               </p>
@@ -456,9 +444,9 @@
                 />
               </div>
               <div class="contact__field">
-                <label for="company" class="contact__label"
-                  >Empresa (opcional)</label
-                >
+                <label for="company" class="contact__label">
+                  Empresa (opcional)
+                </label>
                 <input
                   type="text"
                   id="company"
@@ -485,6 +473,7 @@
                 Gracias, hemos recibido tu mensaje.
               </p>
             </form>
+            -->
           </div>
         </div>
       </section>
