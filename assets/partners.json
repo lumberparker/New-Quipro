@@ -10,7 +10,12 @@
     "description": "Especialistas en branding, UX/UI y contenido digital."
   },
   {
-    "name": "Consultora de Negocios",
+    "name": "Consultoría de Negocios",
+    "image": "assets/imagenes/partner-consultoria.jpg",
+    "description": "Consultores que ayudan a alinear la tecnología con objetivos de negocio."
+  },
+  {
+    "name": "Consultoría de Negocios",
     "image": "assets/imagenes/partner-consultoria.jpg",
     "description": "Consultores que ayudan a alinear la tecnología con objetivos de negocio."
   }
