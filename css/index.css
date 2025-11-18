@@ -51,6 +51,18 @@ body.page {
   padding-top: 80px;
 }
 
+.section-animate {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 500ms var(--transition-normal),
+    transform 500ms var(--transition-normal);
+}
+
+.section-animate--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .skip-link {
   position: absolute;
   left: -999px;
