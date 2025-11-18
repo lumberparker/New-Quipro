@@ -271,21 +271,21 @@ function renderPortfolioGallery(container, category) {
       const overlay = document.createElement("div");
       overlay.className = "portfolio-card__overlay";
 
-      const title = document.createElement("h4");
-      title.className = "portfolio-card__title";
-      title.textContent = project.name;
-
       const description = document.createElement("p");
       description.className = "portfolio-card__description";
       description.textContent =
         project.description || "Solución tecnológica desarrollada por Quipro.";
 
-      overlay.appendChild(title);
       overlay.appendChild(description);
 
       figure.appendChild(img);
       figure.appendChild(overlay);
       item.appendChild(figure);
+
+      const title = document.createElement("h4");
+      title.className = "portfolio-card__title";
+      title.textContent = project.name;
+      item.appendChild(title);
 
       grid.appendChild(item);
     });
